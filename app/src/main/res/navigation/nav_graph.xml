@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/notesListFragment">
+
+    <fragment
+        android:id="@+id/notesListFragment"
+        android:name="com.example.quicknote.ui.quickNote.NotesListFragment"
+        android:label="NotesListFragment" >
+        <action
+            android:id="@+id/action_notesListFragment_to_addNoteFragment"
+            app:destination="@id/addNoteFragment" />
+        <action
+            android:id="@+id/action_notesListFragment_to_searchNoteFragment"
+            app:destination="@id/searchNoteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addNoteFragment"
+        android:name="com.example.quicknote.ui.addNote.AddNoteFragment"
+        android:label="AddNoteFragment" />
+    <fragment
+        android:id="@+id/searchNoteFragment"
+        android:name="com.example.quicknote.ui.searchNote.SearchNoteFragment"
+        android:label="SearchNoteFragment" />
+</navigation>
